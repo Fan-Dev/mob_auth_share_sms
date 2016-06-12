@@ -43,6 +43,7 @@ qZone.showUser(null);
 
 ##分享
 >>1.授权用的是ShareSDK.initSDK(this);
+
 >>2.注意分享使用到的图片资源不要放到 mipmap中，否则找不到。应放到drawable-xxx中。
 
 ```
