@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:text="18505126169"
+        android:ems="10"
+        tools:layout_editor_absoluteY="23dp"
+        android:id="@+id/et_phone_num"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBottom="@+id/btn_getsmscode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="手机号" />
+
+    <Button
+        android:text="获取验证码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_getsmscode"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/et_phone_num"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/et_sms_code"
+        android:layout_marginTop="20dp"
+        android:hint="验证码"
+        android:layout_below="@+id/et_phone_num"
+        android:layout_alignLeft="@+id/btn_share"
+        android:layout_alignStart="@+id/btn_share"
+        android:inputType="number" />
+
+    <Button
+        android:text="校验"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_ok"
+        android:layout_below="@+id/et_sms_code"/>
+    <Button
+        android:text="分享"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_share"
+        android:layout_below="@+id/btn_ok"/>
+
+    <Button
+        android:text="授权登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/btn_share"/>
+
+    <Button
+        android:text="拉取信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_uinfo"
+        android:layout_below="@+id/btn_login"/>
+</RelativeLayout>
