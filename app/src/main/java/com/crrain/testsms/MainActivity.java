@@ -74,11 +74,9 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Log.d("aaa", "<qZone>授权失败");
         }
-        qZone.isValid();
 
         et_phone_num = (EditText) findViewById(R.id.et_phone_num);
         et_sms_code = (EditText) findViewById(R.id.et_sms_code);
-
         findViewById(R.id.btn_getsmscode).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
