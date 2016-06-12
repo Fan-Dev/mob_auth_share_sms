@@ -1,5 +1,6 @@
 # mob_auth_share_sms
 Mob服务测试，包含 授权登录 分享 短信验证码
+>>官网地址：http://www.mob.com/
 
 ##授权登录
 >>授权用的是ShareSDK.initSDK(this);
